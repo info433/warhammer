@@ -1,0 +1,134 @@
+
+body {
+     background-image: url(https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/09/space-marine-2-final-boss-fight-header.jpg);
+     background-attachment: fixed;
+     font-family: Bradley Hand, cursive;
+     margin: 0;
+     padding: 0;
+     color: var(--text-color);
+     
+ }
+
+ .header img {
+     display: block;
+     margin: 0 auto;
+     mix-blend-mode: multiply;
+     max-width: 100%;
+     height: auto;
+ }
+ 
+ .header h3 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+     font-size: 28px;
+ }
+ 
+ .back {
+    background-color: var(--background);
+     max-width: 1500px;
+     margin: 20px auto;
+     padding: 20px;
+     box-sizing: border-box;
+     border-radius: 12px;   
+ }
+
+ 
+ .q {
+     font-size: 20px;
+     border-bottom: solid 1px grey;
+     margin: 10px 0;
+     font-weight: bold;
+ }
+
+.animated1{
+    margin-bottom: 30px;
+     margin-right: 10px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-0%,-0%);
+     width: 350px;
+     height: 517px;
+     overflow: hidden;
+     display: inline-block;
+}
+
+ .anim_text,
+ .anim_img{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     box-sizing: border-box;
+ }
+
+ .animated1 .anim_img img{
+     width: 100%;
+ }
+
+ .anim_text{
+     background: rgba(119, 136, 153,0.9);
+     top: 0;
+     left: 100%;
+     padding: 30px 30px;
+     transition: transform 0.3s ease;
+     transform: translateX(100%);
+ }
+
+ .animated1:hover .anim_text{
+     top: 0;
+     left: 0;
+     transform: translateX(0);
+ }
+
+ main img{
+     width: 350px;
+     height: 517px;
+ }
+
+ .anim_text h3{
+     border-bottom: solid black 3px;
+ }
+
+ :root{
+    --background: var(--bg-light);
+    --text-color: var(--text-dark);
+    --bg-dark: #0d1b2a;
+    --text-dark: #000;
+    --bg-light: #fff;
+    --text-light: #fff;
+
+    --text-hover: #333;
+ }
+
+ @media (prefers-color-scheme: dark){
+    :root{
+        --background: var(--bg-dark);
+        --text-color: var(--text-light)
+    }
+}
+
+ .temu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    margin-left: 1350px;
+ }
+
+ body.dark{
+    --background: var(--bg-dark);
+    --text-color: var(--text-light);
+ }
+
+ body.light{
+    --background: var(--bg-light);
+    --text-color: var(--text-dark);
+ }
+
+ input{
+    cursor: pointer;
+ }
+
+ a{
+    color: var(--text-color);
+ }
